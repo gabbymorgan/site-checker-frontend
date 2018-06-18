@@ -15,7 +15,7 @@ class App extends Component {
   }
   search(search) {
     axios
-    .get(`http://localhost:8081/?url=${search}`)
+    .get(`http://shrouded-anchorage-71788.herokuapp.com/?url=${search}`)
     .then(response => {
       const data = response.data;
       this.setState({
